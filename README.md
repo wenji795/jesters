@@ -1,2 +1,2 @@
 # jesters
-1 year ago, practical js
+1 year ago, js practical
