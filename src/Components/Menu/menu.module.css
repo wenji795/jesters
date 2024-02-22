@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+    height: 100%;
+    font-family: Roboto, "Avenir";
+    margin: 0;
+}
+
+body{
+    flex-direction: column;
+}
+
+#wrapper{
+    flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    z-index: 1;
+    top: 0;
+    background-color: #520975;
+}
+
+section a {
+    width:30px;
+    font-size: 14px;
+    padding: 10px;
+    color: #f8dfa3;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    text-decoration: none
+}
+
+section.top_bar {
+    max-width: 1200px;
+    margin:auto;
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.top_bar > div.container > div.left-side {
+    flex:1;
+    max-width: 750px;
+}
+
+.top_bar > div.container > div.right-side {
+    margin: auto;
+  }
+
+section.main_bar{
+    width:1024px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.main_bar > img.img-box{
+    height:80px;
+    width:240px;
+    margin-left: 100px;
+}
+
+.main_bar > img.img-box > .jester-logo{
+    margin-left: 100px;
+}
+
+.main_bar > div.menu-bar {
+    margin-top: 24px;
+    height:80px;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_bar > div.menu-bar > a {
+    font-family: "Avenir Heavy";
+    font-size: 18px;
+    padding: 15px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bar > div.menu-bar > button.Order-online{
+    font-size: 20px;
+    font-family: "Avenir Heavy";
+    background: #FFC600;
+    border-radius: 33px;
+    padding: 9px 32px;
+    border: 0em;
+    color: #520975;
+    margin-left: 15px;
+}
+
+main{
+    width: 100%;
+}
+
+main > .main-page-img{
+    width:100%;
+}
+
+main > .pie_list {
+    width: 100%;
+    min-height: 1600px;
+    background-image:url("/public/img_jesters/Jesters-Shapes-Pattern-BKG-transparent.png");
+    background-repeat:repeat;
+
+}
+
+.pie_list > div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: -4px;
+    width:100%;
+    height:72px;
+}
+
+.pie_list > div:nth-child(1) > div.purple-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width:740px;
+    margin-top: -10px;
+    background-color: #520975;
+    padding: 20px 30px;
+}
+
+.pie_list > div:nth-child(1) > div.purple-row > .JSS-button {
+    font-size: 17px;
+    font-family: "Avenir Heavy";
+    background: #FFC600;
+    border-radius: 33px;
+    width:320px;
+    padding: 9px 50px;
+    border: 0em;
+    color: #520975;
+    margin-left: 20px;
+}
+
+.pie_list > div:nth-child(1) > div.purple-row > .JaC-button {
+    font-size: 17px;
+    font-family: "Avenir Heavy";
+    border-radius: 33px;
+    padding: 9px 50px;
+    border: 0em;
+    width:300px;
+    color: white;
+    background-color: #520975;
+}
+
+.pie_list > div:nth-child(2) {
+    font-weight: bold;
+    height: 50px;
+    margin: 0;
+    color:#520975;
+    text-align: center
+}
+
+.pie_list > div:nth-child(2) > h1{
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.pie_list > div:nth-child(3){
+    text-align: center;
+    height: 80px;
+}
+
+.pie_list > div:nth-child(3) > a{
+    font-weight: bold;
+    font-family: "Avenir Heavy";
+    font-size:18px;
+    color:#520975;
+
+}
+
+.pie_list > div:nth-child(3) > a:hover {
+    color: #FFC600;
+    transition: 0.3s;
+}
+
+.pie_list > form{
+    width:1024px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 100px;
+    margin:0px auto;
+}
+
+.pie_list > form >  div.food-box{
+    position: relative;
+    width:90%;
+    background-color:#f7effa;
+    border-radius: 30px;
+}
+
+.pie_list > form >  div.food-box > div.img-box1{
+    position: relative;
+    width:100%;
+    height:200px;
+}    
+
+.pie_list > form >  div.food-box > div.img-box1 > img{
+    width:320px;
+}
+
+.pie_list > form >  div.food-box > div.img-box1:hover{
+    background: #dccde3;
+    transition: 0.3s;
+}
+
+.pie_list > form >  div.food-box > div.tag-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.pie_list > form >  div.food-box > div.tag-box > div:nth-child(1) {
+    font-family: "Avenir Heavy";
+    border: 1px solid #520975;
+    color: #520975;
+    align-self: center;
+    margin: 3px;
+    background: #ffffff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pie_list > form >  div.food-box > div.tag-box > div:nth-child(2) {
+    font-family: "Avenir Heavy";
+    align-self: center;
+    margin-left: 10px;
+    padding: 0 10px;
+    border: 1px solid rgb(245, 118, 95);
+    background-color:rgb(245, 118, 95);
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.pie_list > form >  div.food-box > div:nth-child(3) > h1{
+    text-align: center;
+    font-family: "Brandon Printed Two";
+    font-size: 20px;
+    line-height: 20px;
+    color: #520975;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+
+.pie_list > form >  div.food-box > div:nth-child(4) > h2{
+    text-align: center;
+    font-family: "Intro";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #520975;
+    margin: 16px;
+}
+
+.pie_list > form > div.food-box > p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #520975;
+    font-size: 14px;
+}
+
+footer{
+    height:380px;
+    background-color:#520975;
+    position:relative;
+    width:100%;
+}
+
+.footer-ctn a {
+    width:100%;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-ctn {
+    padding-top: 120px;
+}
+
+.footer-ctn > .row-grid1{
+    width:1024px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.footer-ctn > .row-grid1 > div:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer-ctn > .row-grid1 > div:nth-child(3) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.footer-ctn > .row-grid1 > div:nth-child(4) > h3{
+    color: #ffc600;
+    font-family: "Thirsty";
+    font-weight:bolder;
+    font-size: 26px;
+    line-height: 20px;
+    margin-top: 56px;
+}
+
+.footer-ctn > .row-grid1 > div:nth-child(4) > .icon-row{
+    display:grid;
+    grid-template-columns: 40px 40px 40px 1fr;
+}
+
+
+.footer-ctn > .row-grid1 > div:nth-child(4) > .icon-row > a{
+    font-size: 26px;
+    height: 30px;
+    width: 30px;
+    color:white;
+    margin-left: -12px;
+    margin-top: -16px;
+
+}
+.footer-ctn > .row-grid1 > div:nth-child(4) > .icon-row > a:hover{
+    color: #FFC600;
+}
+
+.footer-ctn > .row-grid2{
+    width:90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    height:20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.footer-ctn > .row-grid2 > div:nth-child(1) > p {
+    color: gray;
+}
+
+.footer-ctn > .row-grid2 > div:nth-child(2){
+    margin-top: 15px;
+}
+
+.footer-ctn > .row-grid2 > div:nth-child(3){
+    margin-top: 15px;
+}
+
+.footer-ctn > .row-grid2  a{
+    font-size: 16px;
+    padding:0;
+    color:#dccde3;
+   
+}
+
+
+
+
+
+/* media queries  
+@media (max-width:1024px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+*/

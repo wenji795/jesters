@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+      <meta charset="UTF-8" />
+      <title>Jesters_Catering</title>
+      <link rel="stylesheet" type="text/css" href="Catering.module.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+     <div id="wrapper">
+
+     <header>
+       <section class="top_bar">
+         <div class="left-side">
+         </div>
+           
+         <div class="right-side">
+           <a href="">Our Story</a>
+           <a href="">Become a Franchisee</a>
+           <a href="">Fundraising</a>
+           <a href="">Contact Us</a>
+         </div>
+       </section>
+ 
+       <section class="main_bar">
+         <div class="img-box">
+           <img class="jester-logo" src="/public/img_jesters/logo.svg"></img>
+         </div>
+         
+           <div class="menu-bar">
+             <a href="">Menu</a>
+             <a href="">Catering</a>
+             <a href="">Locations</a>
+             <button class="Order-online">Order online</button>
+           </div>
+         
+       </section>
+     </header>
+
+     <main>
+        <section class="section_rows"> 
+          <img class="main-page-img" src="/public/img_jesters/Catering_pic/Catering-bg.png"></img> 
+
+     
+          <div class="rows-box">       
+            <span>Feeding a crowd?</span>
+            <h1>LET'S MAKE YOUR</h1>
+            <h1>NEXT EVENT EASY AND</h1>
+            <h1>DELICIOUS.</h1>
+          </div>
+        </section>
+
+        <section class="section_package">
+          <h2>1.SELECT A CATERING PACKAGE</h2>
+            <div class="container">
+              <div class="package">
+                <h3>package 1</h3>
+                <h4>LIFE'S A</h4>
+                <h4>PARTY</h4>
+                <img src="/public/img_jesters/Catering_pic/oval1.svg">
+                <h5>$110</h5>
+                <p>Serves 20+ people</p>
+                <p>20 pieces</p>
+                <p>Includes</p>
+                <h6>Choose from our range of full sized pies and rolls</h6>
+                <button>SELECT THIS PACK</button>
+              </div>
+
+              <div class="package">
+                <h3>package 1</h3>
+                <h4>LIFE'S A</h4>
+                <h4>PARTY</h4>
+                <img src="/public/img_jesters/Catering_pic/oval1.svg">
+                <h5>$110</h5>
+                <p>Serves 20+ people</p>
+                <p>20 pieces</p>
+                <p>Includes</p>
+                <h6>Choose from our range of full sized pies and rolls</h6>
+                <button>SELECT THIS PACK</button>
+              </div>
+
+              <div class="package">
+                <h3>package 1</h3>
+                <h4>LIFE'S A</h4>
+                <h4>PARTY</h4>
+                <img src="/public/img_jesters/Catering_pic/oval1.svg">
+                <h5>$110</h5>
+                <p>Serves 20+ people</p>
+                <p>20 pieces</p>
+                <p>Includes</p>
+                <h6>Choose from our range of full sized pies and rolls</h6>
+                <button>SELECT THIS PACK</button>
+              </div>
+            </div>
+        </section>
+
+        <section class="section_event_details">
+          <div class="container">
+            <h2>2.EVENT DETAILS</h2>
+
+          <form>
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Your Name" name="name" id="name">
+            </div>
+
+            <div class="two-column">
+              <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="number" placeholder="Phone" name="phone" id="phone">
+              </div>
+              
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" name="email" id="email">
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="address">Address</label>
+              <input type="text" placeholder="" name="address" id="address">
+            </div>
+
+            <div class="two-column">
+              <div class="input-group">
+                <label for="suburb">Suburb</label>
+                <input type="text" placeholder="" name="suburb" id="suburb">
+              </div>
+              
+              <div class="input-group">
+                <label for="postcode">Postcode</label>
+                <input type="number" placeholder="" name="suburb" id="suburb">
+              </div>
+            </div>
+
+            <div class="two-column">
+              <div class="input-group">
+                <label for="date">Date</label>
+                <input type="date" placeholder="Date" name="date" id="date">
+              </div>
+              
+              <div class="input-group">
+                <label for="time">Time</label>
+                <input type="time" placeholder="Time" name="time" id="time">
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="store">Select pick up store*</label>
+              <select name="store" id="store">
+                <option value="select pick up store...">Select pick up store...</option>
+                <option value="jesters botany junction">Jesters Botany Junction</option>
+                <option value="jesters fraser cove">Jesters Fraser Cove</option>
+                <option value="jesters rototuna">Jesters Rototuna</option>
+                <option value="jesters napier">Jesters Napier</option>
+              </select>
+         
+            </div>
+
+
+            <label for="description">Please provide specifics about your order*</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+          </form>
+          
+            <p>NB: Your order is not confirmed until the store has contacted you. Please allow 48 hours’ notice for all catering orders</p>
+
+            <div class="container-box">
+              <div class="check-container">
+                <input type="checkbox" names="Terms" value="1" required="required">
+                <label> I have read and accept the Terms & Conditions</label>
+              </div>
+
+                <input type="submit" value="ENQUIRE NOW" class="action">
+            </div>
+        </div>
+        </section>
+     </main>
+     </div>
+
+     <footer>
+      <div class="footer-ctn">
+        <section class="row-grid1">
+          <div class="img-box">
+            <img src="/public/img_jesters/footer-badge.png">
+          </div>
+  
+          <div>
+            <a>Menu</a>
+            <a>Catering</a>
+            <a>Locations</a>
+          </div>
+  
+          <div>
+            <a>Our Story</a>
+            <a>Become a Franchisee</a>
+            <a>Fundraising</a>
+          </div>
+  
+          <div>
+            <h3>Fllow us:</h3>
+            <div class="icon-row">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+  
+            </div>
+          </div>
+  
+        </section>
+  
+        <section class="row-grid2">
+          <div>
+            <p>©2022 Jesters. All Rights Reserved. Crafted by <a>Crank'd Media</a></p>
+          </div>
+          
+          <div>
+            <a>Terms of Use</a>
+          </div>
+  
+          <div>
+            <a>Privacy Statement</a>
+          </div>       
+        </section>
+      </div>
+    </footer>
